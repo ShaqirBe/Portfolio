@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f5f5;
+  color: #222;
+}
+
+header, footer {
+  background: #222;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0.2rem 0;
+}
+
+header h2 {
+  margin: 0.2rem 0 1rem 0;
+  font-weight: normal;
+  font-size: 1.2rem;
+}
+
+section {
+  padding: 2rem;
+  text-align: center;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin: 1rem;
+  padding: 1rem;
+  width: 300px;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.project-card h3 {
+  margin-top: 0.5rem;
+}
+
+.project-card a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: #0077ff;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #0077ff;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills li {
+  display: inline-block;
+  margin: 0.5rem 1rem;
+  background: #eee;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
