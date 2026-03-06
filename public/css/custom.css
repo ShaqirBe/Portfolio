@@ -112,6 +112,50 @@ h3,
   box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
 }
 
+.contact-icon-link {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 1px solid #dce4ef;
+  background: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #0f172a;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.contact-icon-link svg {
+  width: 22px;
+  height: 22px;
+}
+
+.contact-icon-link:hover,
+.contact-icon-link:focus {
+  transform: translateY(-2px);
+}
+
+.contact-icon-email:hover,
+.contact-icon-email:focus {
+  color: #0284c7;
+  border-color: #bae6fd;
+  box-shadow: 0 10px 24px rgba(2, 132, 199, 0.22);
+}
+
+.contact-icon-linkedin:hover,
+.contact-icon-linkedin:focus {
+  color: #0a66c2;
+  border-color: #bfdbfe;
+  box-shadow: 0 10px 24px rgba(10, 102, 194, 0.24);
+}
+
+.contact-icon-github:hover,
+.contact-icon-github:focus {
+  color: #111827;
+  border-color: #d1d5db;
+  box-shadow: 0 10px 24px rgba(17, 24, 39, 0.2);
+}
+
 .top-spacer {
   padding-top: 7.5rem !important;
 }
@@ -130,5 +174,10 @@ h3,
 
   .project-card img {
     height: 190px;
+  }
+
+  .contact-icon-link {
+    width: 52px;
+    height: 52px;
   }
 }
