@@ -7,18 +7,22 @@
       <div class="col-lg-8">
         <p class="eyebrow mb-2">About Me</p>
         <h1 class="display-6 fw-bold mb-3">Developer focused on real outcomes</h1>
-        <p class="lead text-muted mb-4">
-          I focus on building modern, reliable web applications that are easy to maintain.
-          I enjoy creating projects where frontend and backend work in harmony.
-        </p>
+        <p class="lead text-muted mb-4"><%= profile.summary %></p>
 
-        <div class="about-block p-4 p-md-5">
+        <div class="about-block p-4 p-md-5 mb-4">
           <h2 class="h4 mb-3">What I bring to a team</h2>
           <ul class="mb-0">
             <li>Clear and scalable code structure.</li>
             <li>Clear communication with focus on deliverables.</li>
             <li>Practical mindset: performance, security, and clean UX.</li>
           </ul>
+        </div>
+
+        <div class="about-block p-4 p-md-5">
+          <h2 class="h5 mb-3">Professional Links</h2>
+          <p class="mb-2">Email: <a href="mailto:<%= profile.contact.email %>"><%= profile.contact.email %></a></p>
+          <p class="mb-2">LinkedIn: <a href="<%= profile.contact.linkedin %>" target="_blank" rel="noreferrer"><%= profile.contact.linkedin %></a></p>
+          <p class="mb-0">CV: <a href="<%= profile.cv.publicUrl %>" target="_blank" rel="noreferrer">Download <%= profile.cv.fileName %></a></p>
         </div>
       </div>
     </div>

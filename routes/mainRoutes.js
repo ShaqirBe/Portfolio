@@ -1,5 +1,6 @@
 const express = require('express');
 const projects = require('../data/projects');
+const profile = require('../data/profile');
 
 const router = express.Router();
 
@@ -10,6 +11,7 @@ router.get('/', (req, res) => {
     pageTitle: 'Shaqir Beqiri | Fullstack Developer',
     activePage: 'home',
     projects: projects.slice(0, 3),
+    profile,
     contactStatus
   });
 });
@@ -18,14 +20,16 @@ router.get('/projects', (req, res) => {
   res.render('projects', {
     pageTitle: 'Projects | Shaqir Beqiri',
     activePage: 'projects',
-    projects
+    projects,
+    profile
   });
 });
 
 router.get('/about', (req, res) => {
   res.render('about', {
     pageTitle: 'About | Shaqir Beqiri',
-    activePage: 'about'
+    activePage: 'about',
+    profile
   });
 });
 
