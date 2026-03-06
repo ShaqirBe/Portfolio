@@ -4,7 +4,7 @@ Modern portfolio built with **Node.js**, **Express**, **EJS**, and **Bootstrap**
 
 ## Live Demo
 
-- Add your deployed URL here: `https://your-app-url`
+- www.
 
 ## Tech Stack
 
