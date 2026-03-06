@@ -1,0 +1,22 @@
+{
+  "name": "portfolio-modern",
+  "version": "1.0.0",
+  "description": "Modern portfolio with Node.js, Express, EJS, and Bootstrap",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node --watch app.js"
+  },
+  "keywords": [
+    "portfolio",
+    "express",
+    "ejs",
+    "bootstrap"
+  ],
+  "author": "Shaqir Beqiri",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2",
+    "ejs": "^3.1.10"
+  }
+}

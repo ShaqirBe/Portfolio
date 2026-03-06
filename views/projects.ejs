@@ -1,0 +1,40 @@
+<%- include('partials/head') %>
+<%- include('partials/navbar', { activePage }) %>
+
+<section class="top-spacer py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <p class="eyebrow mb-2">Portfolio</p>
+      <h1 class="display-6 fw-bold">My Projects</h1>
+      <p class="text-muted">Real-world projects focused on architecture, clean code, and user experience.</p>
+    </div>
+
+    <div class="row g-4">
+      <% projects.forEach(project => { %>
+        <div class="col-md-6 col-lg-4">
+          <article class="project-card h-100">
+            <img src="<%= project.image %>" alt="<%= project.imageAlt %>" class="img-fluid rounded-top" />
+            <div class="p-4 d-flex flex-column h-100">
+              <h2 class="h5"><%= project.title %></h2>
+              <p class="text-muted"><%= project.description %></p>
+              <ul class="small text-muted ps-3 mb-4">
+                <% project.stack.forEach(item => { %>
+                  <li><%= item %></li>
+                <% }) %>
+              </ul>
+              <div class="mt-auto d-flex gap-2 flex-wrap">
+                <a href="<%= project.github %>" target="_blank" rel="noreferrer" class="btn btn-sm btn-dark">GitHub</a>
+                <% if (project.live) { %>
+                  <a href="<%= project.live %>" target="_blank" rel="noreferrer" class="btn btn-sm btn-outline-dark">Live Demo</a>
+                <% } %>
+              </div>
+            </div>
+          </article>
+        </div>
+      <% }) %>
+    </div>
+  </div>
+</section>
+
+<%- include('partials/footer') %>
+<%- include('partials/scripts') %>
